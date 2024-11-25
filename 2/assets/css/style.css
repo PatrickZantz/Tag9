@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../font/Raleway-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway";
+    font-size: 11px;
+}
+
+body {
+    border-bottom: 1px solid lightgray;
+}
+
+nav a,
+nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.logo {
+    font-size: 2rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: lightcyan;
+}
+
+nav a:hover {
+    color: gray;
+    background-color: lightcyan;
+
+}

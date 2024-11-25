@@ -1,0 +1,39 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000086;
+    color: #ffffff;
+    opacity: 0.9;   
+}
+
+h1{
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+    padding-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    margin-top: -120px;
+    justify-content: center;
+    height: 100vh;
+}
+
