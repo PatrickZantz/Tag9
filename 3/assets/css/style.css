@@ -1,14 +1,19 @@
 @font-face {
     font-family: "Raleway";
-    src: url(../fonts/Raleway-Regular.ttf);
+    src: url(../font/Raleway-Regular.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Raleway";
 }
 
+main {
+    display: flexbox;
+    justify-content: center;
+}
 
 nav {
     height: 76px;
@@ -65,8 +70,8 @@ nav ul li a:hover {
     background-image: url("../img/bild.png");
     background-repeat: no-repeat;
 
-    width: 100%;
-    height: 1000px;
+    min-width: 100vw;
+    min-height: 1000px;
 
     display: flex;
     justify-content: center;
@@ -77,12 +82,16 @@ nav ul li a:hover {
 div h1 {
     font-size: 4rem;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 
 }
 
 div p {
     font-size: 1.4rem;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 div section {
@@ -127,6 +136,9 @@ div section a:nth-of-type(2):hover {
 .mac2 {
     display: flex;
     color: black;
+    align-items: center;
+
+
 }
 
 .mac2 {
@@ -142,18 +154,25 @@ div section a:nth-of-type(2):hover {
 .mac2 img {
     width: 60%;
     height: 60%;
+
 }
 
 .mac section h2,
 .mac2 section h2 {
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: -40px;
+
 }
 
 .mac section p,
 .mac2 section p {
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    width: 360px;
+    height: 311px;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
 
     color: gray;
 }
@@ -165,8 +184,237 @@ div section a:nth-of-type(2):hover {
     color: white;
     text-decoration: none;
     background-color: brown;
+    margin-top: -100px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mac section {
+    margin-left: 10%;
+}
+
+.mac2 section {
+    margin-right: 10%;
+}
+
+
+.para {
+    background-image: url("../img/parallax.png");
+    background-repeat: no-repeat;
+
+    min-width: 100%;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.para div h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.para div p {
+    font-size: 1.4rem;
+    margin-right: 20%;
+    margin-left: 20%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.para div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.para div section a {
+    width: 200px;
+    height: 54px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.limit div {
+    color: black;
+}
+
+.limit img {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.limit div h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    justify-content: center;
+}
+
+.limit div p {
+    font-size: 1.4rem;
+    margin-right: 20%;
+    margin-left: 20%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.limit div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.limit div section a {
+    width: 200px;
+    height: 54px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latti {
+    background-color: black;
+    padding-top: 100px;
+}
+
+.latti img {
+    width: 340px;
+    height: 230px;
+    margin-bottom: 100px;
+    display: inline;
+}
+
+.cosi {
+    background-image: url("../img/image\ copy\ 2.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosi div h1 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cosi div p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cosi div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.cosi h3 {
+    justify-content: center;
+}
+
+.clients {
+    width: 100vw;
+}
+
+.clients h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+
+    margin: 50px;
+}
+
+.clients article{
+    display: flex;
+
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.next {
+    width: 100vw;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+    background-color: lightgray;
+
+
+    font-family: 'Railway';
+    font-size: 20px;
+}
+
+.next p{
+    color: black;
+
+    margin: 50px;
+}
+
+.next article{
+    width: 200px;
+    height: 54px;
+    color: white;
+    background-color: brown;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+.next a {
+    text-decoration: none;
+    color: white;
+}
+
+.last {
+    background-color: black;
+    height: 200px;
+    width: 100vw;
+
+    align-content: center;
+    padding: 50px;
 }
